@@ -48,9 +48,61 @@ nav{
 .container{
     width: 100%;
     display: flex;
+    border: 2px solid white;
 }
 
 .container .img img{
     height: 500px;
     width: 527px;
+    border-radius: 50%;
+    border: 6px solid aqua;
+    box-shadow: -15px 28px 43px 22px; aqua;
+}
+
+.img{
+    border: 2px solid white;
+}
+
+.about{
+    border: 2px solid white;
+    width: 600px;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.about h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.about h2{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.about p{
+    width: 500px;
+}
+
+
+span{
+    color: yellow;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: yellow;
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 15px;
+}
+
+.btn2{
+    height: 30px;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 15px;
 }
