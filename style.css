@@ -10,6 +10,7 @@ body{
     color: aqua;
 }
 
+
 nav{
     height: 100px;
     /* position: relative; */
@@ -36,35 +37,39 @@ nav{
     list-style: none;
     margin: 0 25px;
     padding-top: 30px;
-    color: aqua;
+    /* color: aqua; */
 }
 
 .nav-list li a{
+    background: transparent url;
     text-decoration: none;
-    color: black;
+    /* color: black; */
     color: aqua;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 15px 6px   yellow; */
 }
 
 .container{
     width: 100%;
     display: flex;
-    border: 2px solid white;
+    justify-content: space-around;
+    /* border: 2px solid white; */
 }
 
 .container .img img{
-    height: 500px;
-    width: 527px;
+    height: 458px;
+    width: 483px;
     border-radius: 50%;
     border: 6px solid aqua;
-    box-shadow: -15px 28px 43px 22px; aqua;
+    box-shadow: -15px 28px 43px 22px aqua;
+    transition: all 0.7s;
 }
 
-.img{
-    border: 2px solid white;
+.container .img img:hover{
+    box-shadow: 15px -28px 43px 22px aqua;
 }
 
 .about{
-    border: 2px solid white;
     width: 600px;
     padding-left: 60px;
     padding-top: 60px;
@@ -98,11 +103,59 @@ span{
     height: 30px;
     padding: 0px 10px;
     border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 15px 4px   white;
+    transition: all 0.5s;
+}
+
+.btn1:hover{
+    box-shadow: 0px 0px 15px 4px   yellow;
+    background-color: white;
+    cursor: pointer;
+    color: aqua;
 }
 
 .btn2{
+    margin-left: 15px;
     height: 30px;
     background-color: white;
     padding: 0px 10px;
     border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 15px 4px   yellow;
+    transition: all 0.5s;
+    color: aqua;
+}
+
+.btn2:hover{
+    box-shadow: 0px 0px 15px 4px   white;
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+}
+
+.icon{
+    display: flex;
+    /* border: 2px solid white; */
+    width: 300px;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.icon1 i{
+    font-size: 40px;
+}
+
+/* .icon1 i:hover{
+    box-shadow: 0px 0px 15px 4px   white;
+} */
+
+.icon2 i{
+    font-size: 50px;
+}
+.icon3 i{
+    font-size: 50px;
+}
+.icon4 i{
+    font-size: 50px;
 }
