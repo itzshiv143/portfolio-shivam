@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* font-family: 'Aclonica', sans-serif; */
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -9,6 +13,8 @@ body{
     background-image: linear-gradient(269deg, #000000 0%, #2c2929 100%);
     color: aqua;
     position: relative;
+    margin: 0px;
+    width: 100%;
     /* z-index: 10; */
 }
 
@@ -27,13 +33,27 @@ body{
     align-items: center;
 }
 
-nav{
-    height: 100px;
-    /* position: relative; */
+#nav{
+    height: 60px;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    align-items: center;
     /* border: 2px solid red; */
+    box-shadow: 0px 0px 18px 5px yellow;
+    transition: all 0.7s;
+
+}
+
+#nav:hover{
+    box-shadow: 0px 0px 18px 5px aqua;
+
+}
+
+#nav h2{
+    font-family: 'Aclonica', sans-serif;
+    color: yellow;
+    padding-left: 55px;
 }
 
 .navbar{
@@ -45,14 +65,15 @@ nav{
 .nav-list{
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: center;
     color: aqua;
 }
 
 .nav-list li{
     list-style: none;
-    margin: 0 25px;
-    padding-top: 30px;
+    margin: 0px 25px;
+    /* padding-top: 30px; */
     /* color: aqua; */
 }
 
@@ -72,8 +93,14 @@ nav{
     /* border: 2px solid white; */
 }
 
+.nav-list li a:hover{
+    transform: scale(1.5% 2%);
+    color: yellow;
+}
+
 .container .img img{
     height: 458px;
+    margin-top: 50px;
     width: 483px;
     border-radius: 50%;
     border: 6px solid aqua;
@@ -82,7 +109,8 @@ nav{
 }
 
 .container .img img:hover{
-    box-shadow: 15px -28px 43px 22px aqua;
+    box-shadow: 15px -28px 43px 22px yellow;
+    border: 6px solid yellow;   
 }
 
 .about{
@@ -94,6 +122,7 @@ nav{
 .about h4{
     font-size: 30px;
     padding-bottom: 20px;
+    color: yellow;
 }
 
 .about h2{
@@ -128,7 +157,7 @@ span{
     box-shadow: 0px 0px 15px 4px   yellow;
     background-color: white;
     cursor: pointer;
-    color: aqua;
+    color: black;
 }
 
 .btn2{
@@ -140,7 +169,7 @@ span{
     border: none;
     box-shadow: 0px 0px 15px 4px   yellow;
     transition: all 0.5s;
-    color: aqua;
+    color: black;
 }
 
 .btn2:hover{
@@ -160,6 +189,9 @@ span{
 
 .icon1 i{
     font-size: 40px;
+    color:aqua;
+    transition: all 0.5s;
+
 }
 
 /* .icon1 i:hover{
@@ -168,23 +200,57 @@ span{
 
 .icon2 i{
     font-size: 50px;
+    color:aqua;
+    transition: all 0.5s;
+
 }
 .icon3 i{
     font-size: 50px;
+    color:aqua;
+    transition: all 0.5s;
+
 }
 .icon4 i{
     font-size: 50px;
+    color:aqua;
+    transition: all 0.5s;
+
+}
+
+.icon4 i:hover{
+    color: yellow;
+}
+.icon3 i:hover{
+    color: yellow;
+}
+.icon2 i:hover{
+    color: yellow;
+}
+.icon1 i:hover{
+    color: yellow;
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 799px){
     
     .nav-list {
-        /* display: flex;
+        display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        color: aqua; */
+        position: fixed;
+        top: 0;
+        right: 80px;
+        width: 300px;
+        height: 100vh;
+        background-color: transparent ;
+        /* box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.466) ; */
+        padding: 80px 0px 0px 10px;
+    }
+
+    .navbar {
+        /* border: 2px solid black; */
+        margin-right: 0px;
     }
 
     .container {
@@ -192,6 +258,5 @@ span{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: ;
     }
 }
